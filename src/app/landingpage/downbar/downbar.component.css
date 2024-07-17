@@ -1,0 +1,73 @@
+/* Navbar */
+.navbar {
+  background-color: #343a40; /* Dark background color for the navbar */
+  border: none;
+  border-radius: 0; /* Remove border radius */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #ffc107; /* Change to your desired hover color */
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #343a40; /* Dark background color */
+  border: none;
+  border-radius: 0.5rem; /* Rounded corners for dropdown */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+  padding: 0.5rem 0; /* Adjust padding */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 1rem 1.5rem; /* Increase padding for better spacing */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #ffc107; /* Change to your desired hover color */
+  color: #212529; /* Change to your desired hover text color */
+}
+
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Add a divider */
+}
+
+/* Arrow icon for dropdown toggles */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.5rem; /* Adjust margin */
+  vertical-align: 0.255em;
+  content: "\f107"; /* Unicode character for angle-down icon */
+  font-family: "Font Awesome 5 Free"; /* Use Font Awesome for icons */
+  font-weight: 900;
+  font-size: 0.75rem; /* Adjust icon size */
+  color: #fff;
+}
+
+/* Hover effect for dropdown toggles */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+

@@ -1,0 +1,62 @@
+.video-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.video {
+  width: 45%;
+  /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc; /* Add border */
+  border-radius: 10px;
+}
+
+.shop-now-button {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 15px;
+  /* Adjust button padding */
+  font-size: 14px;
+  /* Adjust button font size */
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-button:hover {
+  background-color: #e64a19;
+}
+
+.title-shop {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000000;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.title-shop::after {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 0.5rem);
+  /* Position arrow to the right of the SHOP title */
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  /* Adjust arrow size */
+  color: var(--dark-color);
+}

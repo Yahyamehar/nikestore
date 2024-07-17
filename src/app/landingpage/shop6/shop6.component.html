@@ -1,0 +1,11 @@
+<div class="shoe-container">
+  <h1 class="title-shop">SHOP FILA</h1>
+  <div class="shoe-items">
+    <div class="shoe-item" *ngFor="let shoe of shoes">
+      <img [src]="shoe.imageUrl" [alt]="shoe.name">
+      <h2>{{ shoe.name }}</h2>
+      <h3>{{ shoe.title }}</h3>
+      <button class="shop-now-btn">Shop Now</button>
+    </div>
+  </div>
+</div>

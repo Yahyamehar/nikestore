@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Add any other styles for the sticky navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  transition: top 0.3s;
+}
+
+
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dk {
+  margin-right: 3px;
+}
+.sale {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(189, 13, 13);
+  margin-top: 5px;
+
+}
+
+.navbar-brand .dk {
+  background-color: red;
+  border-radius: 5px;
+  padding: 2px 8px;
+  color: white;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #333;
+}
+
+.navbar-toggler-icon:hover {
+  background-color: #007bff;
+}
+
+/* Image Container Styles */
+.mainwall {
+  width: 100%;
+  max-height: 600px; /* Adjust the max height as per your preference */
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+}
+/* CSS Styles */
+.position-relative {
+  position: relative;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.lorem-text {
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+ .form-control {
+  border-radius: 18px;
+  width: 320px;
+
+ }

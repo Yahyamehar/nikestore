@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.wallpaper1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.overlay-text {
+  text-align: left;
+  color: black;
+}
+
+.overlay-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overlay-text button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-text button:hover {
+  background-color: #0056b3;
+}
